@@ -1,0 +1,33 @@
+.......using right shift operator.........
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int t; cin >> t;
+	while (t--)
+	{
+		int n, i; cin >> n >> i;
+		n = n >> i;
+		if (n & 1) printf("yes\n");
+		else printf("no\n");
+	}
+}
+
+.....using left shift operator...........
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int t; cin >> t;
+	while (t--)
+	{
+		int n, i; cin >> n >> i;
+		int f = 1;
+		f = f << i;
+		if (n & f) printf("yes\n");
+		else printf("no\n");
+	}
+}
